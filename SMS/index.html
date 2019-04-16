@@ -1,0 +1,31 @@
+<?php require_once('DB_CONNECTION/DB_Connection.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+	        <meta http-equiv="x-UA-Compatible" content="id=edge">
+	<title>Login</title>
+	<link rel="stylesheet" href="signin.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+	<form class="form-signin">
+    <!-- <img class="mb-4" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+    <h1 class="h1 mb-3 font-weight-normal text-center">WELCOME</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control rd" placeholder="Email address" required autofocus><br>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control " placeholder="Password" required>
+    <hr>
+  <!-- <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button><br> -->
+  <a href="admin.html" class="btn btn-primary btn-block">Sign in</a><br>
+  <p class="text-center">
+  	<a href="#">Forget password</a>
+  </p>
+  
+</form>
+</body>
+</html>
+<?php sqlsrv_close($con);?>
